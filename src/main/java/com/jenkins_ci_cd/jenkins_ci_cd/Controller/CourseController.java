@@ -20,7 +20,7 @@ public class CourseController {
 
     @GetMapping("/nameCourse")
     public ResponseEntity<Map<String, String>> nameApp() {
-        String DEFAULT_COURSE = "Curso: CI/CD con Jenkins y CircleCI";
+        String DEFAULT_COURSE = "Curso: CI/CD con Jenkins y CircleCI!!";
         String courseName = courseService.getNameCourse(DEFAULT_COURSE);
 
         Map<String, String> response = new HashMap<>();
